@@ -7,10 +7,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<SCRIPT type="text/javascript">
+<!-- <SCRIPT type="text/javascript">
     window.history.forward();
     function noBack() { window.history.forward(); }
-</SCRIPT>
+</SCRIPT> -->
 <title>Spring3Example</title>
 </head>
 <body onload="noBack();"

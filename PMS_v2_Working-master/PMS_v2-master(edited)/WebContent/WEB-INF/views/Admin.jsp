@@ -7,10 +7,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<SCRIPT type="text/javascript">
+<!-- <SCRIPT type="text/javascript">
     window.history.forward();
     function noBack() { window.history.forward(); }
-</SCRIPT>
+</SCRIPT> -->
 <title>Spring3Example</title>
 </head>
 <body onload="noBack();"
@@ -20,10 +20,22 @@
 <table>
 
 	<tr>
-		<td><a href="addUser">Click here to Add users via csv file</a></td>
+		<td><a href="addUser">Click here to Add students via csv file</a></td>
 	</tr>
 	<tr>
-		<td><a href="form">Logout</a></td>
+		<td><br/>To add users manually</td>
+	</tr>
+	<tr>
+		<td>1. <a href="addstudent.html">Add Student</a></td></tr>
+    <tr>
+		<td>2. <a href="addfaculty.html">Add Faculty</a></td></tr>
+	<tr>
+		<td>3. <a href="removeuser.html">Remove User</a><br/></td>
+	</tr>
+	
+	<tr>
+	
+		<td><br/><br/><a href="form">Logout</a></td>
 	</tr>
 </table>
 </body>

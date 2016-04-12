@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<SCRIPT type="text/javascript">
+<!-- <SCRIPT type="text/javascript">
     window.history.forward();
     function noBack() { window.history.forward(); }
-</SCRIPT>
+</SCRIPT> -->
 <title>Insert title here</title>
 </head>
 <body onload="noBack();"
