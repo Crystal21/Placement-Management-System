@@ -20,7 +20,7 @@
 	<mvc:annotation-driven />
 
 	<mvc:resources location="views/" mapping="/views/**" />
-	<mvc:resources location="/assets/" mapping="/assets/**" /> 
+	<mvc:resources location="WEB-INF/assets/" mapping="/assets/**" /> 
 
  
 	<tx:annotation-driven transaction-manager="hibernateTransactionManager" />
