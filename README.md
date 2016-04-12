@@ -1,4 +1,4 @@
 # Placement-Management-System
 Final Integrated project
 
-Crystal's code to be merged
+Login,Email and Feedback
