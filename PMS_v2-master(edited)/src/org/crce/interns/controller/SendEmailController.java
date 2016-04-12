@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller
+@Controller("sendEmailController")
 public class SendEmailController {
 
 	//@Autowired
@@ -89,11 +89,12 @@ public class SendEmailController {
         Return Type: ModelAndView
         Function: Displays The Compose an e-mail page
 	*/
-
+        /*
 	@RequestMapping(method=RequestMethod.GET, value="/")
 	public ModelAndView welcome() {
 		return new ModelAndView("EmailForm");
 	}
+        */
 }
 
 
