@@ -12,7 +12,8 @@
 Hello Views
 
 <ul>
-  <li><a href="/PMS_v1/form">Login Form</a></li>
+  <li><a href="/IntegrationTesting/form">Login Form</a></li>
+  <li><a href="/IntegrationTesting/searchHome">Search Users</a></li>
 </ul>
 </body>
 </html>

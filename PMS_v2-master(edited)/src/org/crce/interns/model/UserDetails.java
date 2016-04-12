@@ -25,10 +25,10 @@ public class UserDetails implements Serializable{
 	String userPassword;
 	
 	@Column(name = "account_active" )
-	boolean accountActive;
+	String accountActive;
 	
 	@Column(name = "current_state" )
-	boolean currentState;
+	String currentState;
 	
 	@Column(name = "last_login" )
 	Date lastLogin;
@@ -109,18 +109,18 @@ public class UserDetails implements Serializable{
 	public void setUserPassWord(String userPassword) {
 		this.userPassword = userPassword;
 	}
-	public boolean getAccountActive() {
+	public String getAccountActive() {
 		return accountActive;
 	}
 
-	public void setAccountActive(boolean accountActive) {
+	public void setAccountActive(String accountActive) {
 		this.accountActive = accountActive;
 	}
-	public boolean getCurrentState() {
+	public String getCurrentState() {
 		return currentState;
 	}
 
-	public void setCurrentState(boolean currentState) {
+	public void setCurrentState(String currentState) {
 		this.currentState = currentState;
 	}
 
