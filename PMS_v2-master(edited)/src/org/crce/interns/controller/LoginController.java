@@ -38,19 +38,6 @@ public class LoginController extends HttpServlet{
 		return new ModelAndView("index");
 	}
 	
-	/*@RequestMapping(value="/", method = RequestMethod.GET)
-	public String index() {
-		
-		System.out.println("Inside Controller");
-		
-		//ModelAndView model=null;
-		
-		//model = new ModelAndView("index");
-		System.out.println("return model");
-		//return model;
-		return "index";
-		
-	}*/
 
 	@RequestMapping(value="/form" , method = RequestMethod.GET)  
   	public ModelAndView showForm(HttpServletRequest request, HttpServletResponse response) {
@@ -60,14 +47,7 @@ public class LoginController extends HttpServlet{
 		ModelAndView model=null;
 		model = new ModelAndView("loginform");
 		model.addObject("loginForm", loginForm);
-		//model.a
-		/*HttpSession session = request.getSession();
-		 request.getAttribute("userName");
-		 
-			String name = (String) session.getAttribute("userName");
-			String Role = (String) session.getAttribute("role");
-		*/
-			
+		
 		return model;	
 		
 	}
@@ -84,35 +64,17 @@ public class LoginController extends HttpServlet{
 		String role=loginService.checkLogin(loginForm.getUserName(),loginForm.getPassword());
 			
 		System.out.println("Role is:" +role);
-		/*
-		if(role.equals("Student")){
-			model.put("loginForm", loginForm);
-			return "Student";
-		}
-		else if(role.equals("StudentTPC"))
-		{
-			model.put("loginForm", loginForm);
-			return "StudentTPC";
-		}
-		else if(role.equals("TPO"))
-		{
-			model.put("loginForm", loginForm);
-			return "TPO";
-		}
-		else{
-			result.rejectValue("userName","invaliduser");
-			return "loginform";
-		}
-		*/
-		
-		
+	
 		
 		if(role.equals("Student")){
 			model = new ModelAndView("Student");
 			HttpSession session=request.getSession();
 			String name =  request.getParameter("userName");
 		    System.out.println("UserName: " + name); // Here it prints the username properly
+		    
 		    request.getSession(true).setAttribute("userName", name );
+		     request.getSession(true).setAttribute("roleId", "1" );
+		    // System.out.println(session.getAttribute("userName"));
 		    System.out.println("Logged in as what????: " + name);
 			return model;
 		}
@@ -122,7 +84,10 @@ public class LoginController extends HttpServlet{
 			HttpSession session=request.getSession();
 			String name =  request.getParameter("userName");
 		    System.out.println("UserName: " + name); // Here it prints the username properly
+		    
 		    request.getSession(true).setAttribute("userName", name );
+		    request.getSession(true).setAttribute("roleId", "3" );
+		    
 		    System.out.println("Logged in as what????: " + name);
 			return model;
 		}
@@ -132,7 +97,10 @@ public class LoginController extends HttpServlet{
 			HttpSession session=request.getSession();
 			String name =  request.getParameter("userName");
 		    System.out.println("UserName: " + name); // Here it prints the username properly
+		    
 		    request.getSession(true).setAttribute("userName", name );
+		    request.getSession(true).setAttribute("roleId", "5" );
+		    
 		    System.out.println("Logged in as what????: " + name);
 			return model;
 		}
