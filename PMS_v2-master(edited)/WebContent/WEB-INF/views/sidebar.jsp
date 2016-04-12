@@ -34,7 +34,7 @@
 						class="menu-icon fa fa-list"></i> <span class="menu-text">
 							List </span>
 				</a> <b class="arrow"></b></li>
-				<li class="active" ><a href="EmailForm"> <i
+				<li class="active" ><a href="/PMS_v1/sendMail"> <i
 						class="menu-icon fa-envelope"></i> <span class="menu-text">
 							Compose e-Mail </span>
 				</a> <b class="arrow"></b></li>
