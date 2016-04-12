@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-@Service
+@Service("sendEmailService")
 public class SendEmailServiceImpl implements SendEmailService	{
 	
 	@Autowired
