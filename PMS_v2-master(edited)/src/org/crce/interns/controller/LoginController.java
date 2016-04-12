@@ -58,7 +58,8 @@ public class LoginController extends HttpServlet{
 		System.out.println("Inside Controller");
 		LoginForm loginForm = new LoginForm();
 		ModelAndView model=null;
-		model = new ModelAndView("loginform");
+		//model = new ModelAndView("loginform");
+		model = new ModelAndView("Login");
 		model.addObject("loginForm", loginForm);
 		//model.a
 		/*HttpSession session = request.getSession();
