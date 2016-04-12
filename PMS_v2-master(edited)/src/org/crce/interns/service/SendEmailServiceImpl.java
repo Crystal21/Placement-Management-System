@@ -72,7 +72,7 @@ public class SendEmailServiceImpl implements SendEmailService	{
 
 
 		deleteFiles();
-		return new ModelAndView("Result");
+		return new ModelAndView("EmailForm");
 	}
 	
 	
